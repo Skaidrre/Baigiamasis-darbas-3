@@ -353,17 +353,19 @@ button:hover {
   
 
 @media(max-width:768px){
-    .header {
-        display: none;
-    }
-
     nav {
-        padding: 10px;
+        padding: 1.5rem;
+    background-color: rgb(249, 160, 8);
+   display: flex;
     }
+    
     .logo2 {
         display: flex;
     }
 
+  .header {
+    display: none;
+  }
     nav a{
         padding: 0px;
     }
@@ -434,6 +436,7 @@ button:hover {
     .header {
       padding-right: 0px;
     }
+
     nav ul {
       gap: 10px;
     }
@@ -456,10 +459,6 @@ button:hover {
     .hamburger {
       display: block;
       padding-right: 30px;
-    }
-  
-    .navbar {
-      display: none;
     }
     
     .navlinks {
