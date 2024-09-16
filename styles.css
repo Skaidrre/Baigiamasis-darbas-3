@@ -72,7 +72,7 @@ a {
   }
 
   .hero {
-    background: url("https://i.ibb.co/1Rc0JVQ/257715295-5259751714040488-5127012730843726081-n.jpg");
+    background: url("profile.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
@@ -153,7 +153,7 @@ h1 {
 }
 
 .apie {
-    background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
+    background: url("apie.jpg");
       background-position: left;
       background-repeat: no-repeat;
       background-size: cover;
@@ -186,13 +186,21 @@ h1 {
   position: absolute;
   z-index: 2;
   background-color: white;
-  bottom: 20%;
+  bottom: 15%;
   }
 
  .footer2 {
   position: relative;
   top: 100%;
- }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  font-size: 15px;
+  text-align: center;
+}
+
 
   .paslaugos {
     display: flex;
@@ -282,14 +290,10 @@ margin-left: 460px;
 
 h2 {
   text-align: center;
-  margin-bottom: 20px;
-  color: #333;
 }
 
 p {
   text-align: center;
-  margin-bottom: 30px;
-  color: #555;
 }
 
 form {
