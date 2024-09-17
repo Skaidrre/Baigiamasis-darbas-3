@@ -510,7 +510,7 @@ font-size: 12px;
 }
 
   
-  @media(max-width:360px){
+  @media(max-width:450px){
     .hero {
       flex-direction: column;
   }
