@@ -13,9 +13,6 @@ a:visited {
     color: black;
 }
 
-/* a:hover {
-    color: white;
-} */
 
 body {
     background-color: white;
@@ -45,7 +42,6 @@ a {
     background-color: rgb(249, 160, 8);
     font-size: 20px;
     font-weight: bold;
-    padding-right: 350px;
   }
   
   .img {
@@ -72,22 +68,31 @@ a {
   }
 
   .hero {
-    background: url("profile.jpg");
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: contain;
-    font-size: 24px;
-    padding-left: 700px;
-    height: 790px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    gap: 20px;
-    font-size: 30px;
 }
 
+.nuotrauka {
+  background: url("profile.jpg");
+  height: 790px;
+  width: 40%;
+  background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+.prisistatymas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  font-size: 30px;
+  width: 60%;
+}
 
 #susipazinkime {
   background-color: rgb(249, 160, 8); 
@@ -107,15 +112,22 @@ a {
   transform: scale(0.8); 
 }
 
-.paveiksliukas {
+.informacija {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  align-items: center;
 }
 
 .pic {
-  width: 890px;
+background: url("ramunes.jpg");
+height: 790px;
+width: 60%;
+background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 
 .tekst {
   display: flex;
@@ -129,6 +141,8 @@ a {
   font-size: 30px;
   text-align: center;
   font-weight: bold;
+  width: 40%;
+  height: 790px;
 }
 
 .tekst img{
@@ -154,7 +168,7 @@ h1 {
 
 .apie {
     background: url("apie.jpg");
-      background-position: left;
+      background-position: center;
       background-repeat: no-repeat;
       background-size: cover;
       height: 1200px;
@@ -186,7 +200,7 @@ h1 {
   position: absolute;
   z-index: 2;
   background-color: white;
-  bottom: 15%;
+  top: 80%;
   }
 
  .footer2 {
@@ -201,26 +215,38 @@ h1 {
   text-align: center;
 }
 
+.paslaugos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
 
-  .paslaugos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  .tekst2 {
-    display: flex;
-    flex-direction: column;
-    justify-content:space-around;
-    align-items: center;
-    padding: 30px;
-    padding-top: 50px;
-    padding-bottom: 100px;
-    font-size: 20px;
-    text-align: center;
-    gap: 10px;
-    border-bottom: 1px solid black;
-  }
+.pic2 {
+  background: url("paslaugos.jpg");
+  height: 650px;
+  width: 40%;
+  background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.tekst2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: center;
+  padding: 30px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  font-size: 20px;
+  text-align: center;
+  gap: 10px;
+  border-bottom: 1px solid black;
+  width: 70%;
+  height: 650px;
+}
 
   .kainos{
     display: flex;
@@ -277,7 +303,11 @@ h1 {
     height: 20px;
   }
 
-
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .contact-container {
   background-color: white;
   padding: 40px;
@@ -285,7 +315,6 @@ h1 {
   width: 100%;
   border-radius: 8px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-margin-left: 460px;
 }
 
 h2 {
@@ -334,23 +363,16 @@ button:hover {
   background-color: rgb(239, 197, 113);
 }
 
-/* Mobile responsiveness */
-@media (max-width: 600px) {
-  .contact-container {
-    padding: 20px;
-  }
 
-  h2 {
-    font-size: 24px;
+@media(max-width:1024px){
+  nav ul {
+    gap: 10px;
   }
-
-  button {
-    font-size: 14px;
-    padding: 12px;
+  
+  .tekst2 {
+    font-size: 15px;
   }
 }
-
-  
 
 @media(max-width:768px){
     nav {
@@ -431,30 +453,6 @@ button:hover {
     }
 }
 
-
-@media(max-width:1024px){
-    .header {
-      padding-right: 0px;
-    }
-
-    nav ul {
-      gap: 10px;
-    }
-    .pic {
-      width: 380px;
-    }
-  
-    .tekst {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      gap: 10px;
-      
-    }
-  }
-  
-  
-  
-  
   @media(max-width:768px){
     .hamburger {
       display: block;
@@ -477,88 +475,83 @@ button:hover {
     .navlinks.active {
       left: 0;
     }
-  
-   
-    .hero {
-      background-position: left;
-      background-repeat: no-repeat;
-      background-size: 50%;
-      padding-left: 400px;
-      height: 470px;
-      gap: 20px;
-      font-size: 20px;
-  }
-    .pic {
-      width: 380px;
-    }
-  
-    .tekst {
-      padding-top: 50px;
-      padding-bottom: 50px;
-      gap: 10px;
-      font-size: 20px;
-    }
-  
+
     .apie {
-      background: url("https://i.ibb.co/7nbvF9S/207485040-4788879777794353-2171201344808936400-n.jpg");
-        background-position: left;
-        background-repeat: no-repeat;
-        background-size:auto;
-        height: 200px;
-        color: black;
-        position: relative;
         z-index: -1;
+        height: 1000px;
     }
   
+  .aprasymas {
+    font-size: 15px;
+    }
+
   .aprasymas2 {
-  top: 80%;
+  font-size: 15px;
   }
-  
+}
+
+@media(max-width:600px){
   .apie {
-      background-size: contain;
-      height: 1000px;
-  }
-  
-  .paslaugos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .pic2 {
-   height: 450px;
-   width: 400px;
-   margin-left: 150px;
-   margin-top: 50px;
-  }
-  
-  }
+  height: 900px;
+}
+
+.aprasymas {
+font-size: 12px;
+}
+
+.aprasymas2 {
+font-size: 12px;
+}
+
+.tekst2 {
+  font-size: 10px;
+}
+
+}
+
   
   @media(max-width:360px){
-    .pic {
-      width: 380px;
-    }
-  
     .hero {
-      background-position: top;
-      background-size: 40%;
-      padding-left: 0px;
-      padding-top: 170px;
-      gap: 20px;
-      font-size: 20px;
-      height: 520px;
+      flex-direction: column;
   }
   
-  .pic {
-    display:none;
+  .nuotrauka {
+    height: 400px;
+    width: 100%;
+  
   }
   
-  .tekst {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    gap: 10px;
-    font-size: 20px;
+  .prisistatymas {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 25px;
+    padding: 10px;
+    width: 100%;
   }
+
+
+.informacija {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.pic {
+height: 500px;
+width: 100%;
+}
+
+
+.tekst {
+  font-size: 25px;
+  width: 100%;
+  height: 600px;
+}
+
+.tekst img{
+  height: 30px;
+  margin-right: 10px;
+}
   
   .apie {
       background-position: center;
@@ -579,12 +572,17 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    font-size: 15px;
+    
+  }
+
+  .tekst2 {
+    font-size: 12px;
+    padding-top: 0px;
   }
   
   .pic2 {
    height: 350px;
-   width: 300px;
+   width: 90%;
    margin: 15px;
   }
   }
