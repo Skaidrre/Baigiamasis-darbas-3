@@ -321,6 +321,10 @@ p {
   text-align: center;
 }
 
+h2 {
+  text-align: center;
+}
+
 form {
   display: flex;
   flex-direction: column;
@@ -466,6 +470,15 @@ button:hover {
       transition: 0.3s;
     }
   
+    .tekst {
+      padding: 20px;
+      font-size: 25px;
+    }
+
+    .placiau {
+      width: 150px;
+    }
+
     .navlinks.active {
       left: 0;
     }
